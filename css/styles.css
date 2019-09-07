@@ -1,0 +1,1211 @@
+/* GLOBALS */
+@font-face
+{
+    font-family: "Tajawal";
+    src: url('../fonts/Tajawal-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: "Tajawal-Bold";
+    src: url('../fonts/Tajawal-Bold.ttf');
+}
+
+@font-face
+{
+    font-family: "Cairo-Bold";
+    src: url('../fonts/Cairo-Bold.ttf');
+}
+@font-face
+{
+    font-family: "Cairo";
+    src: url('../fonts/Cairo-Regular.ttf');
+}
+
+
+
+*
+{
+    box-sizing: border-box;
+    font-family: "Tajawal";
+    
+    
+}
+html,body
+{
+    width:100%;
+    height:auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+main
+{
+
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.container
+{
+    padding: 0 15%;
+    width:100%;
+    height: 100%;
+}
+
+.section-header
+{
+    text-align: center;
+}
+.section-header > .main-header
+{
+    font-size: 35px;
+    font-family: "Tajawal-Bold";
+    color: #2c2e30;
+    display: block;
+}
+
+.section-header > .sub-header
+{
+    font-size: 16px;
+    color: #54565a;
+    line-height: 1.75;
+}
+
+/*------------------------------HEADER CSS-----------------------------------*/
+header
+{
+    background:#283583;
+    height: 50px;
+}
+
+.header-options
+{
+    display: flex;
+    flex-direction: row;
+
+}
+.search-btn,
+.lang-btn,
+.social-btn
+{
+    background-color: rgba(4, 10, 42, 0.2);
+    border:none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    padding: 0px 20px;
+    font-size: 14px;
+}
+
+.search-btn > img 
+{
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+.lang-btn,
+.social-btn
+{
+    background: none;
+}
+
+.social-btn
+{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    align-self: center;
+    margin-right: auto;
+}
+
+/*-----------------NAVIGATION----------------*/
+
+.navigation
+{
+    background: #fff;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 20px 40px 0 rgba(125, 138, 159, 0.13);
+    border: solid 1.2px rgba(201, 209, 219, 0.11);
+}
+
+.footer-nav
+{
+    background:#283583;
+    color:#fff !important;
+}
+
+.footer-nav > .navigation-list > .navigation-list-item > a
+{
+    color:#fff !important;
+}
+
+
+
+.navigation-list
+{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navigation-list-item
+{
+    display: inline-block;
+    padding:0px 10px;
+
+}
+
+.navigation-list-item > a
+{
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color:#8591b0;
+    font-size: 17px;
+}
+.logo
+{
+    padding:0px;
+    margin-left: 40px;
+}
+.greeting
+{
+    background: url("../images/doctor-section-background.png") no-repeat;
+    height: 800px;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    display:grid;
+    grid-template-rows: auto 100px;
+    grid-template-columns: repeat(2,1fr);
+    direction: rtl;
+}
+.doctor-image
+{
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.doctor-image >img
+{
+    
+    width: 100%;
+}
+
+.geeting-text
+{
+    display: flex;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.welcome,
+.official-site,
+.doctor-name
+{
+    display: block;
+    letter-spacing: normal;
+}
+
+.welcome
+{
+    color:#7e8085;
+    font-size: 21px;
+    line-height: 1.62;
+}
+
+.official-site,
+.doctor-name
+{
+    font-size: 51px;
+}
+
+.official-site
+{
+    color: #040a2c;
+}
+.doctor-name
+{
+    color: #283583;
+}
+.navigate-down
+{
+    grid-column: 1/3;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigate-down > button
+{
+    font-size: 18px;
+    background: none;
+    border:none;
+    cursor: pointer;
+}
+
+.navigate-down > button > span
+{
+    display: block;
+    margin-bottom: 12px;
+}
+
+
+/*---------------------------- ABOUT DOCTOR SECTION -----------------------------*/
+
+.about-doctor
+{
+    background-image: linear-gradient(310deg, #ffffff, #fcfdfd);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    height: auto;
+    gap: 60px;
+}
+
+.about-doctor-title,
+.about-important-works
+{
+    color: #2c2e30;
+    font-family: "Tajawal-Bold";
+    font-size: 35px;
+}
+
+.about-text > p,
+.important-work-text > p
+{
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: right;
+    font-size: 16px;
+}
+
+.about-image
+{
+    display: flex;
+}
+.about-image > img
+{
+    width:100%;
+    margin: auto;
+}
+
+.important-work-cards
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.important-work-cards >  .card
+{
+    border-radius: 11px;
+    background-color: #ffffff;
+    width: 30%;
+    height: auto;
+    box-shadow: 0px 0px 40px #c9cedf;
+    padding: 15px 10px;
+}
+
+.card-header
+{
+    display: flex;
+    width:100%;
+    align-items: center;
+}
+
+.card-header > .icon
+{
+    width: 36.2px;
+    height: 36.2px;
+    border-radius: 11.3px;
+}
+.card-header > .header-title
+{
+    color:#323c5a;
+    letter-spacing: 0.38px;
+    font-size: 18px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.card > .content > p
+{
+    line-height: 1.8;
+    font-size: 10px;
+    color: #8591b0;
+}
+
+.card > .options > a
+{
+    color:#3f4751;
+    text-decoration: none;
+    font-size: 11.2px;
+}
+
+.quran
+{
+    background-image: linear-gradient(125deg, #80458a, #eb74e7 99%, #ec74e7);
+    opacity: 0.5;
+}
+
+.books
+{
+    background-image: linear-gradient(to right, #f6c707, #ff9252);
+}
+
+.articles
+{
+    background-image: linear-gradient(to right, #4a5cc4, #283583);
+}
+
+/*---------------------MOST READ--------------------*/
+
+.most-read
+{
+    background-image: linear-gradient(310deg, #f8f9fd, #fcfdfd);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-rows:200px auto;
+    height: auto;
+    gap: 60px;
+}
+
+.most-read-articles
+{
+    background:url("../images/most-read.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.most-read-articles > .atricle
+{
+
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+  background-color: #ffffff;
+  width:30%;
+  height: 380px;
+}
+
+.most-read-articles > .atricle > img
+{
+    height: 50%;
+    width: 100%;
+}
+
+.atricle > .atricle-content
+{
+    padding:10px;
+}
+
+.atricle > .atricle-content > .article-content-header
+{
+    line-height: 1.52;
+    font-size: 21px;
+    color: #040a2c;
+    font-family: "Tajawal-Bold";
+}
+
+.atricle > .atricle-content > p
+{
+    line-height: 1.71;
+    font-size: 14px;
+    color: #8591b0;
+}
+
+
+/*--------------------------research and books-----------------------------*/
+
+.researches-books
+{
+    background-color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-rows: auto;
+    height: auto;
+    gap: 60px;
+}
+
+.researches-books-container
+{
+    background:url("../images/group-14@2x.png") no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.researches-books-container > .book
+{
+  border-radius: 3.2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+  background-color: #ffffff;
+  height: 400px;
+  width: 100%;
+}
+.researches-books-container > .book > .book-img
+{
+    width: 100%;
+    height: 60%;
+}
+.researches-books-container > .book > .book-desc
+{
+    padding: 15px;
+    padding-left: 50px;
+}
+
+.researches-books-container > .book > .book-desc > .book-title
+{
+    font-size: 21px;
+    line-height: 1.52;
+    font-family: "Tajawal-Bold";
+    color: #040a2c;
+}
+.researches-books-container > .book > .book-desc > p
+{
+    color: #8591b0;
+    font-size: 16px;
+}
+
+/*-----------------------------------VIDEOS-----------------------------------*/
+.videos
+{
+    background-color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-rows: auto;
+    height: auto;
+    gap: 60px;
+    background: url("../images/video-background.png") no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.video-container
+{
+    display: flex;
+    margin:auto;
+    position: relative;
+    border-radius: 10.7px;
+    overflow: hidden;
+
+}
+
+.video-container > video
+{
+    width: 100%;
+    border-radius: 10.7px;
+    box-shadow: 0 5px 17px 0 rgba(7, 42, 68, 0.1);
+}
+
+.video-container > .play-button
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(124deg, rgba(74, 92, 196, 0.08), #283583);
+    transition: 0.8s;
+    opacity: 1;
+}
+
+
+.video-container > .play-button > .video-desc
+{
+    line-height: 1.4;
+    color: #ffffff;
+    font-family: "Tajawal-Bold";
+    font-size: 20px;
+}
+
+.video-container > .play-button > #play
+{
+    background: none;
+    border:none;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.video-container > .video-controls
+{
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    bottom: 0;
+    direction: ltr;
+    transition: 0.8s;
+    display: none;
+}
+
+.video-container > .video-controls > #pause-play,
+.video-container > .video-controls > #fullscreen
+{
+   background: none;
+   border:none;
+   width: 32px;
+   order:1;
+   cursor: pointer;
+}
+.video-container > .video-controls > #fullscreen
+{
+    order:3;
+}
+
+.video-container > .video-controls >  #pause-play > img,
+.video-container > .video-controls >  #fullscreen > img
+{
+    vertical-align: middle;
+    width:100%;
+}
+
+.video-container > .video-controls > #progress-bar
+{
+  order: 2;
+  flex-grow: 1;
+  background: #7e8085;
+  height: 5px;
+  border-radius: 1px;
+
+}
+.video-container > .video-controls > #progress-bar > #progress-bar-filler
+{
+   background: #fff;
+   transition: 1s linear;
+   width:0%;
+   height: 100%;
+   border-radius: 1px;
+}
+/*---------------------------OPINIONS----------------------------------*/
+.opinions
+{
+    background-color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-rows: auto;
+    height: auto;
+    gap: 60px;
+}
+.opinions > .opinion-container
+{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+    border: solid 1px #8591b0;
+    padding: 15px 30px;
+    position: relative;
+    text-align: center;
+}
+
+.opinions > .opinion-container::after
+{
+    content: '';
+    border-style: solid;
+    border-width: 20px 10px 0 10px;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateY(100%);
+}
+
+.opinions > .opinion-container::before
+{
+    content: '';
+    border-style: solid;
+    border-width: 22px 11px 0 11px;
+    border-color: #8591b0 transparent transparent transparent;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateY(100%);
+}
+
+.opinion-item > .opinion-issuer
+{
+    color: #4a5cc4;
+    font-size: 14px;
+    font-family: "Tajawal-Bold";
+    display: block;
+}
+
+.commenters
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.commenters > .commenter
+{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin: 12px;
+    cursor: pointer;
+}
+
+.commenters > .commenter > img
+{
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+
+}
+
+/*--------------------------------FOOTER------------------------*/
+
+.footer-header
+{
+    background:#040a2c;
+    height: 50px;
+}
+
+
+/*-----------------------------CV PAGE--------------------------*/
+
+.doc-cv
+{
+    background-image: linear-gradient(303deg, #eef1f6, #fcfdfd);
+}
+.doc-cv-name-title
+{
+    line-height: 1.62;
+    color: #7e8085;
+    font-size: 21px;
+    font-family:"Cairo-Bold"
+}
+.doc-cv-name
+{
+    font-size: 51px;
+    color: #283583;
+    font-family:"Cairo-Bold";
+}
+
+.doc-cv-birth
+{
+    margin-top: 50px;
+}
+
+.doc-cv-birth-title,
+.doc-cv-birth-date
+{
+    display: block;
+}
+
+.doc-cv-birth-title
+{
+    line-height: 1.62;
+    color: #7e8085;
+    font-size: 21px;
+    font-family: "Cairo";
+}
+.doc-cv-birth-date
+{
+
+    font-family: "Cairo-Bold";
+    font-size: 30px;
+    color: #040a2c;
+}
+
+.education,
+.work,
+.membership
+{
+    background-image: linear-gradient(324deg, #ffffff, #fcfdfd);
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+
+.doc-cv-section-title
+{
+    font-family: "Tajawal-Bold";
+    font-size: 35px;
+    color: #2c2e30;
+    margin-bottom: 80px;
+}
+
+.doc-cv-grid
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.education-item,
+.work-item,
+.membership-item
+{
+    border-radius: 11px;
+    background-color: #ffffff;
+    height: auto;
+    box-shadow: 0px 0px 40px #c9cedf;
+    padding: 15px 10px;
+    text-align: center;
+}
+.education-item > .education-header,
+.work-item > .work-header
+{
+    display: flex;
+    width:100%;
+    align-items: center;
+    
+}
+
+.work-item > .work-header >.icon,
+.education-item > .education-header >.icon
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 18.1px;
+    background-image: linear-gradient(to right, #f6c707, #ff9252);
+}
+.work-item > .work-header >.icon
+{
+    background-image: linear-gradient(to right, #4a5cc4, #283583);
+}
+
+.work-item > .work-header > .date,
+.education-item > .education-header >.date
+{
+    font-family: "Tajawal-Bold";
+    font-size: 20px;
+    letter-spacing: 0.42px;
+    color: #323c5a;
+    margin-right: 20px;
+}
+
+.work-item > .item-content,
+.education-item > .item-content,
+.membership-item > .item-content    
+{
+    font-family: "Tajawal";
+    font-size: 14px;
+    line-height: 1.71;
+    color: #545b6d;
+}
+
+.cv-researches
+{
+    text-align: right;
+}
+/*------------------------------SHORT STORIES--------------------------*/
+.short-stories
+{
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.stories-grid
+{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.story
+{
+    min-height: 380px;
+    max-height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+    background-color: #ffffff;
+}
+.story > img
+{
+    width: 100%;
+    height: 50%;
+}
+
+.story-content
+{
+    padding: 10px;
+    
+}
+
+.story-content > .story-title
+{
+    font-family: "Tajawal-Bold";
+    font-size: 21px;
+    line-height: 1.52;
+    color: #040a2c;
+}
+
+.story-content > .story-breif
+{
+    font-family: "Tajawal";
+    font-size: 14px;
+    line-height: 1.71;
+    color: #8591b0;
+}
+
+.story-details
+{
+    display: flex;
+}
+
+.story-content >  .story-details > .story-publish-date
+{
+  font-family: "Tajawal";
+  font-size: 16px;
+  color: #8591b0;
+}
+.story-content > .story-details > .stroy-visit-count
+{
+    font-family: "Tajawal";
+    font-size: 16px;
+    color: #8591b0;
+    margin-right: auto;
+}
+
+.story-content > .story-details > .stroy-visit-count >.count
+{
+    font-family: "Tajawal-bold";
+
+    color: #4a5cc4;
+}
+
+/*-----------------------------------QURAN TRANSLATE-------------------------*/
+.translate,
+.important-links,
+.quran-suar
+{
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.translate-content
+{
+    font-family: "Tajawal";
+    font-size: 18px;
+    line-height: 2.22;
+    color: #545b6d;
+}
+
+.important-links
+{
+    background-color: #fbfbfe;
+}
+
+.important-links-grid
+{
+    display:grid;
+    width:100%;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+}
+
+.important-links-grid > .important-link-item
+{
+    border-radius: 11px;
+    background-color: #ffffff;
+    padding: 15px;
+    font-family: "Tajawal-Bold";
+    font-size: 18px;
+    line-height: 1.33;
+    color: #283583;
+}
+
+.quran-suar-container
+{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 20% 80%;
+    direction: ltr;
+}
+
+.quran-contents,
+.suar
+{
+    border-radius: 11px;
+    border: solid 1px #f5f5f5;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.quran-contents-title
+{
+    font-family: "Tajawal-Bold";
+    font-size: 20px;
+    letter-spacing: 0.42px;
+    color: #323c5a;
+}
+
+.quran-contents > ul,
+.suar-contents
+{
+    list-style: none;
+    padding: 0px;
+}
+.quran-contents > ul > li
+{
+    font-family: "Tajawal";
+    font-size: 14px;
+    line-height: 3.21;
+    color: #545b6d;
+}
+.suarah
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-family: "Tajawal-Bold";
+    font-size: 18px;
+    color: #545b6d;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px rgb(218, 216, 216) solid;
+}
+.suarah-number
+{
+  width: 37px;
+  height: 37px;
+  border: solid 1px #545b6d;
+  border-radius: 50%;
+  text-align: center;
+  font-family: "Tajawal-Bold";
+  margin-right: 20px;
+}
+
+/*---------------------------------------------ARTICLES------------------------------------------*/
+.article-type
+{
+    height: 84px;
+    border-radius: 2px;
+    border: solid 1.2px rgba(201, 209, 219, 0.11);
+    background-color: #f3f3f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-type > a
+{
+    display: block;
+    font-family: "Tajawal-Bold";
+    font-size: 20px;
+    margin-left: 50px; 
+    line-height: 84px;
+    text-decoration: none;
+    text-align: center;
+    color: #51545e;
+    transition: 0.4s;
+}
+
+.article-type > a:hover
+{
+    color: #ff9252;
+}
+
+.articles-container
+{
+    display: grid;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    grid-template-columns: 20% 80%;
+    gap: 30px;
+}
+
+.articles-categories
+{
+    max-height: 379px;
+    border-radius: 11px;
+    border: solid 1px #f5f5f5;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.articles-categories > .title
+{
+    font-family: "Tajawal-Bold";
+    font-size: 20px;
+    letter-spacing: 0.42px;
+    color: #323c5a;
+}
+
+.articles-categories > ul
+{
+    padding: 0px;
+    list-style:none;
+}
+.articles-categories > ul > li
+{
+    padding: 5px;
+    color: #545b6d;
+    border-left: 1px solid transparent;
+    transition: 0.4s;
+}
+
+.articles-categories > ul > li:hover
+{
+    color: #283583;
+    border-left: 1px solid #283583;
+}
+
+.articles-categories > ul > li > a
+{
+    text-decoration: none;
+    font-family: "Tajawal";
+    font-size: 14px;
+    display: block;
+    line-height: 3.21;
+}
+
+.articles-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 60px auto;
+    gap: 30px;
+}
+.articles-grid > .title
+{
+    grid-row: 1;
+    grid-column: 1/3;
+    font-family: "Tajawal-Bold";
+    font-size: 35px;
+    color: #2c2e30;
+}
+
+/*----------------------------VIEW ARTICLE--------------------------------*/
+.view-item-container > .item-img
+{
+    position: relative;
+}
+.view-item-container > .item-img > img
+{
+    width: 100%;
+    height: 50%;
+}
+
+.view-title-date
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 40%;
+    width:100%;
+    align-items: center;
+}
+
+.view-title-date > .title
+{
+    font-family: "Cairo-Bold";
+    font-size: 51px;
+    color: #ffffff;
+}
+
+.view-title-date > .date
+{
+    font-family: "Tajawal";
+    font-size: 30px;
+    color: #ffffff;
+}
+.view-item-content
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.view-item-content > .tags-visits
+{
+    display: flex;
+    align-items: center;
+}
+.view-item-content > .tags-visits > .visits
+{
+    margin-right: auto;
+    font-family: "Tajawal";
+    font-size: 30px;
+    color: #545b6d;
+}
+.view-item-content > .tags-visits > .visits > span
+{
+    font-family: "Tajawal-Bold";
+
+}
+
+.view-item-content > .tags-visits > .tags
+{
+    display: flex;
+}
+.view-item-content > .tags-visits > .tags > .tag
+{
+  border-radius: 6px;
+  background-color: #f0f2f7;
+  padding: 3px;
+  font-family: "Tajawal";
+  font-size: 20px;
+  color: #545b6d;
+}
+.view-item-conetent-data
+{
+    font-family: "Tajawal";
+    font-size: 18px;
+    line-height: 1.33;
+    color: #545b6d;
+}
+.image-text
+{
+    display: flex;
+}
+.image-text > p
+{
+    padding:10px;
+    font-family: "Tajawal-Bold";
+    font-size: 26px;
+    line-height: 1.35;
+    color: #283583;
+}
+/*---------------------------------MISC-------------------------------*/
+.selected-link
+{
+  border-radius: 2px;
+  background-image: linear-gradient(to right, #4a5cc4, #283583);
+ 
+}
+
+.selected-link > a 
+{
+  color: #fff;
+  padding: 2px;
+}
