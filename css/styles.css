@@ -162,9 +162,13 @@ header
 {
     display: inline-block;
     padding:0px 10px;
-
 }
 
+@media screen and (max-width: 769px) {
+    .navigation-list-item {
+        display: none;
+    }
+}
 .navigation-list-item > a
 {
     display: block;
@@ -1209,3 +1213,101 @@ header
   color: #fff;
   padding: 2px;
 }
+
+/* responsiveness helpers */
+
+@media screen and (max-width: 769px) {
+    .no-grid-mobile {
+        display: block;
+    }
+    .mobile-flex-column {
+        flex-direction: column;
+    }
+    .is-mobile-fullwidth {
+        width: 100% !important;
+    }
+    .no-background-mobile {
+        background-image: unset !important;
+    }
+    .is-hidden-mobile {
+        display: none;
+    }
+    .center-mobile {
+        margin: auto 30px;
+    }
+    .m-t-10 {
+        margin-top: 10px;
+    }
+}
+
+/* mobile media queries */
+
+@media screen and (max-width: 769px) {
+    .doc-cv-grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .researches-books-container {
+        display: unset;
+        background: unset;
+        padding: 0px;
+    }
+    .stories-grid {
+        display: unset !important;
+    }
+    .articles-categories {
+        /* display: unset; */
+    }
+    .articles-categories ul {
+        display: grid;
+        grid-template-rows: 2;
+        grid-template-columns: repeat(3,1fr);    
+    }
+    .articles-categories > ul > li:hover {
+        border-left: unset;
+    }
+    .articles-container {
+        display: unset;
+    }
+    .story {
+        margin-bottom: 15px;
+    }
+    .doc-cv-name {
+        font-size: 31px;
+    }
+    .book-desc {
+        padding-left: 0px !important;
+    }
+    .video-desc {
+        display: none;
+    }
+    .atricle {
+        margin-bottom: 20px;   
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+    .book {
+        margin-bottom: 10px;
+    }
+    .view-title-date > .title {
+        font-size: 20px;
+    }
+    .image-text {
+        display: unset;
+    }
+    .most-read-articles {
+        display: block;
+    }
+    .most-read-articles > .atricle {
+        width: 100%;
+    }
+    .view-item-content > .tags-visits {
+        display: unset;
+    }
+    .view-item-content {
+        padding: 0% 10% !important;
+    }
+    img {
+        max-width: 100%;
+    }
+} 
