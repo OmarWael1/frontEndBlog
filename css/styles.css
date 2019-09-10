@@ -1188,12 +1188,10 @@ header
     line-height: 1.33;
     color: #545b6d;
 }
-.image-text
-{
+.image-text {
     display: flex;
 }
-.image-text > p
-{
+.image-text > p {
     padding:10px;
     font-family: "Tajawal-Bold";
     font-size: 26px;
@@ -1201,15 +1199,13 @@ header
     color: #283583;
 }
 /*---------------------------------MISC-------------------------------*/
-.selected-link
-{
+.selected-link {
   border-radius: 2px;
   background-image: linear-gradient(to right, #4a5cc4, #283583);
  
 }
 
-.selected-link > a 
-{
+.selected-link > a {
   color: #fff;
   padding: 2px;
 }
@@ -1245,6 +1241,9 @@ header
 @media screen and (max-width: 769px) {
     .doc-cv-grid {
         grid-template-columns: repeat(1,1fr);
+    }
+    .logo {
+        display: block;
     }
     .researches-books-container {
         display: unset;
