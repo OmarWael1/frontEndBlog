@@ -1020,6 +1020,13 @@ header
     padding: 10px;
 }
 
+.quran-contents
+{
+    max-height: 600px;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+}
 .quran-contents-title
 {
     font-family: "Tajawal-Bold";
