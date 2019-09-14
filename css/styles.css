@@ -111,6 +111,8 @@ header
 .social-btn
 {
     background: none;
+    width: 28px;
+    height: 28px;
 }
 
 .social-btn
@@ -121,6 +123,57 @@ header
     align-self: center;
     margin-right: auto;
 }
+
+.language-conatiner
+{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+.language-conatiner > .fr 
+{
+    background-image: url("../images/france.png");
+    margin-left: 10px;
+}
+.language-conatiner > .eg
+{
+    background-image: url("../images/egypt.png");
+}
+.language-conatiner > .fr 
+,.language-conatiner > .eg
+{
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+} 
+.language-conatiner > .fr:hover 
+,.language-conatiner > .eg:hover
+{
+    transform: rotate(360deg);
+} 
+
+.language-conatiner > .fr:hover 
+{
+    background-image: url("../images/eiffel-tower.png");
+}
+
+.language-conatiner > .eg:hover 
+{
+    background-image: url("../images/pyramid.png");
+}
+
+.language-conatiner > .fr > img
+,.language-conatiner > .eg > img
+{
+    width: 28px;
+}
+
+
+
 
 /*-----------------NAVIGATION----------------*/
 
