@@ -28,7 +28,7 @@
 {
     box-sizing: border-box;
     font-family: "Tajawal";
-    
+    z-index: 1;
     
 }
 html,body
@@ -216,10 +216,29 @@ header
     display: inline-block;
     padding:0px 10px;
 }
+.menu-toggle
+{
+    display: none;
+    margin-right: auto;
+}
 
 @media screen and (max-width: 769px) {
+    nav{
+        height: auto !important;
+    }
     .navigation-list-item {
-        display: none;
+        margin-bottom: 5px;
+        
+    }
+    .navigation-list
+    {
+        flex-direction: column;
+        z-index: 2000;
+    }
+    .menu-toggle
+    {
+        display: block;
+        margin-right: auto;
     }
 }
 .navigation-list-item > a

@@ -13,19 +13,22 @@ function loaded()
 {
     referenceDOMS();
     registerEvents();
+
 }
 
 
 function referenceDOMS()
 {
-    vid               = document.getElementById("vid");
-    playButton        = document.getElementById("play");
-    pausePlay         = document.getElementById("pause-play");
-    fullscreen        = document.getElementById("fullscreen");
-    videoControls     = document.getElementsByClassName("video-controls")[0];
-    playButtonOverlay = document.getElementsByClassName("play-button")[0];
-    progressBar       = document.getElementById('progress-bar');
-    progressBarFiller = document.getElementById('progress-bar-filler');
+    vid                 = document.getElementById("vid");
+    playButton          = document.getElementById("play");
+    pausePlay           = document.getElementById("pause-play");
+    fullscreen          = document.getElementById("fullscreen");
+    videoControls       = document.getElementsByClassName("video-controls")[0];
+    playButtonOverlay   = document.getElementsByClassName("play-button")[0];
+    progressBar         = document.getElementById('progress-bar');
+    progressBarFiller   = document.getElementById('progress-bar-filler');
+    menuToggle          = document.getElementById('menu-toggle');
+    navigationListItems = document.getElementsByClassName("navigation-list-item");
 }
 
 function registerEvents()
@@ -33,6 +36,7 @@ function registerEvents()
     playButton.addEventListener("click",playVideo);
     fullscreen.addEventListener("click",openFullscreen);
     pausePlay.addEventListener("click",pauseVideo);
+    menuToggle.addEventListener("click", toggleMenu);
     vid.addEventListener('timeupdate', updateProgressBar, false);
 }
 
@@ -77,4 +81,28 @@ function updateProgressBar() {
     } else if (vid.msRequestFullscreen) { /* IE/Edge */
         vid.msRequestFullscreen();
     }
+  }
+
+  function toggleMenu()
+  {
+      for(i = 0 ; i< navigationListItems.length;i++)
+      {
+          console.log()
+        if (navigationListItems[i].style.display === "none")
+        {
+            navigationListItems[i].style.display = "block";
+            document.getElementsByClassName('navigation-list')[0].style["flex-direction"] = "column";
+        }
+        else
+        {
+            navigationListItems[i].style.display = "none";
+            document.getElementsByClassName('navigation-list')[0].style["flex-direction"] = "row";
+        }
+        document.getElementsByClassName('menu-toggle')[0].style.display = "block";
+        document.getElementsByClassName('logo')[0].style.display = "block";
+        
+        
+      }
+            
+
   }
