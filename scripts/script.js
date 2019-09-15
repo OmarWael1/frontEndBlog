@@ -33,11 +33,11 @@ function referenceDOMS()
 
 function registerEvents()
 {
-    playButton.addEventListener("click",playVideo);
-    fullscreen.addEventListener("click",openFullscreen);
-    pausePlay.addEventListener("click",pauseVideo);
-    menuToggle.addEventListener("click", toggleMenu);
-    vid.addEventListener('timeupdate', updateProgressBar, false);
+    playButton != null ? playButton.addEventListener("click",playVideo): console.log("null");
+    fullscreen!= null ? fullscreen.addEventListener("click",openFullscreen):console.log();
+    pausePlay!= null ? pausePlay.addEventListener("click",pauseVideo):console.log();
+    menuToggle!= null ? menuToggle.addEventListener("click", toggleMenu):console.log();
+    vid!= null ? vid.addEventListener('timeupdate', updateProgressBar, false):console.log();
 }
 
 function playVideo()
