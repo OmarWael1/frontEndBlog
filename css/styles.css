@@ -24,6 +24,7 @@
 
 
 
+
 *
 {
     box-sizing: border-box;
@@ -44,6 +45,12 @@ main
 
     width: 100%;
     height: 100%;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
 }
 
 
@@ -1453,4 +1460,32 @@ header
     color: #545b6d;
 }
 
-
+/*---------------------paintings-listing-----------*/
+.paintings-listing
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 100%;
+}
+.paintings-container
+{
+    display: grid;
+    row-gap: 20px;
+}
+.painting-item
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.painting-brief,
+.painting-item-image
+{
+    border-radius: 0px;
+    max-height: 300px;
+}
+.painting-item-image > img
+{
+    height: 300px;
+    width: 100%;
+}
